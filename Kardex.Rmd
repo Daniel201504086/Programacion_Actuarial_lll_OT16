@@ -1,0 +1,29 @@
+---
+title: "Kardex Reynaga"
+author: "Daniel Reynaga Gil"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+
+# Primer semestre
+
+* Matematicas Basicas                         8
+* Problemas de matematicas basicas            8
+* Conceptos de calculo                        8
+* Programacion actuarial 1                    9
+* Introduccion a la profesion actuarial       10
+* DHPC                                        10
+
+
+# Segundo semestre
+
+* Geometría analítica                         8
+* Microeconomía                               6
+* Teoría del interes                          6
+* Programacion actuarial 2                    6
+* Calculo diferencial                         NA
+* Teoria de ecuaciones                        NA
+
+
+
