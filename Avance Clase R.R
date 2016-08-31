@@ -125,11 +125,66 @@ m1
 install.packages("rmarkdown")
 
 
+x
 
 
 
 
+#Factores
+x <- factor(c("si", "no", "si", "no", "si", "no", "si", "no"), levels = c("si", "no"))
+
+x
+table(x)
+unclass(x)
+
+#Valores faltantes
+x <- c(1,2, NaN, 10, 3)
+is.na(x)
+is.nan(x)
 
 
+#Data Frame
+x<- data.frame(Erick = 1:4, Lori= c(T, T, F, F))
+row.names(x)<- c("Primero", "Segundo", "Tercero", "Cuarto")
+x
+nrow(x) 
+ncol(x)
+
+attributes(x)
+
+names(x)<- c("Hola", "Adios")
+x
+
+#Los nombres no son exclusivos de los data frames
+
+x<- 1:3
+names(x)
+names(x)<- c("Hugo", "Paco", "Luis")
+
+x<- factor(c("azul", "rojo", "azul", "amarillo", "verde", "azul"))
+x
+table(x)
+
+z<- list(a= 1:10, b=100:91, c=5)
+z
+names(z)<- c("Sec1", "Sec2", "Sec3")
+z
+
+m <- matrix(1:4, 2,2)
+m
+attributes(m)
+dimnames(m)<- list(c("fil1", "fil2"), c("col1", "col2"))
+m
 
 
+hoja<- matrix(data = NA, nrow=10, ncol=10)
+
+dimnames(hoja) <- list(c(1:10), c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J"))
+
+hoja
+
+data<- read.csv("table.csv")
+data
+
+data<- read.table("table.csv", T, ",")
+data
